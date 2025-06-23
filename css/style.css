@@ -1,4 +1,17 @@
+.racing-sans {
+  font-family: 'Racing Sans One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
+  font-family: 'Lato', 'Verdana', 'Arial', sans-serif;
   --scdfl-red: #f22e3d;
   --scdfl-blue: #22283a;
   --scdfl-gold: #f2b22e;
