@@ -21,8 +21,8 @@
 .container {
   height: 96vh;
   width: 100%;
-  grid-template-rows: 12.5% 40% 40% 7.5%;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 15% 40% 40% 5%;
+  grid-template-columns: 15% 65% 20%;
 }
 
 .item {
@@ -33,13 +33,12 @@
 #header,
 #header #search-bar,
 #header #title-bar,
+#sidebar,
 #sidebar > div,
-#settings-menu,
 #main,
 #announcements {
   display: grid;
 }
-
 
 /* Header Formatting */
 
@@ -68,22 +67,40 @@
   font-size: 36px;
 }
 
-
 /* Sidebar Formatting */
 
 #sidebar {
   grid-area: 1 / 1 / -2 / span 1;
   grid-template-rows: 1fr 4fr 4fr;
+  grid-template-columns: 100%;
   gap: 32px;
   background-color: indianred;
 }
 
 #sidebar > div {
   justify-content: left;
-  /* align-items: center; */
+  padding-top: max(10%, 8px);
+  padding-left: max(10%, 8px);
   line-height: 3em;
 }
 
+#dash-menu {
+  grid-template-rows: 48px;
+}
+
+#main-menu {
+  grid-template-rows: repeat(6, 48px);
+}
+
+#settings-menu {
+  grid-template-rows: repeat(3, 48px);
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
 /* Main Section Formatting */
 
@@ -102,7 +119,6 @@
 #main > div {
   background-color: var(--scdfl-blue);
 }
-
 
 /* Announcements Formatting */
 
