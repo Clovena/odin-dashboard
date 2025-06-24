@@ -44,7 +44,7 @@
 
 #header {
   grid-area: 1 / 2 / span 1 / -1;
-  grid-template-rows: 40% 60%;
+  grid-template-rows: 60% 40%;
   grid-template-columns: 65% 35%;
   align-items: center;
 }
