@@ -79,6 +79,23 @@
   font-size: 36px;
 }
 
+#header #button-bar {
+  justify-self: end;
+  padding-right: 24px;
+}
+
+button {
+  background-color: var(--scdfl-blue);
+  border: 2px solid var(--scdfl-gold);
+  border-radius: 8px;
+  margin: 8px;
+  padding: 4px 12px;
+  font-family: 'Lato', 'Verdana', 'Arial', sans-serif;
+  color: white;
+  font-weight: 600;
+  font-style: oblique;
+}
+
 /* Sidebar Formatting */
 
 #sidebar {
