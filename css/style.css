@@ -55,6 +55,12 @@
   padding: 24px;
 }
 
+#header #account-bar {
+  justify-content: right;
+  margin-right: 24px;
+  font-weight: bolder;
+}
+
 #header #title-bar {
   grid-template-columns: 24px 1fr;
   gap: 32px;
