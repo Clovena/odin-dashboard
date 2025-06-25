@@ -18,17 +18,6 @@
   --scdfl-gray: #e2d7ce;
 }
 
-.container {
-  height: 96vh;
-  width: 100%;
-  grid-template-rows: 15% 40% 40% 5%;
-  grid-template-columns: 15% 65% 20%;
-}
-
-.item {
-  background-color: var(--scdfl-gray);
-}
-
 #layout,
 #header,
 #header #search-bar,
@@ -38,6 +27,17 @@
 #main,
 #announcements {
   display: grid;
+}
+
+#layout {
+  height: 96vh;
+  width: 100%;
+  grid-template-rows: 20% 37.5% 37.5% 5%;
+  grid-template-columns: 15% 65% 20%;
+}
+
+.item {
+  background-color: var(--scdfl-gray);
 }
 
 /* Header Formatting */
@@ -86,7 +86,8 @@
 
 button {
   background-color: var(--scdfl-blue);
-  border: 2px solid var(--scdfl-gold);
+  border-bottom: 2px solid var(--scdfl-gold);
+  border-right: 2px solid var(--scdfl-gold);
   border-radius: 8px;
   margin: 8px;
   padding: 4px 12px;
@@ -147,26 +148,35 @@ button {
   border-left: 4px solid var(--scdfl-gold);
 }
 
-/* Announcements Formatting */
+/* Announcements and Trending Formatting */
 
 #announcements {
-  grid-template-rows: 36px repeat(2, 1fr);
-  gap: 2px;
+  grid-row-start: span 2;
+  grid-template-rows: repeat(2, 40px 1fr) 1fr;
+  gap: 8px;
+  background-color: var(--scdfl-gray);
 }
 
-#announcements > div {
+.notice-cards {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 100%;
+  gap: 4px;
+  margin-right: 8px;
+}
+
+.card {
   background-color: indianred;
+  border-left: 4px solid var(--scdfl-blue);
+  padding-left: 4px;
 }
 
-/* Trending Formatting */
-
-#trending {
-  grid-template-rows: 36px repeat(2, 1fr);
-  gap: 2px;
+.card > p {
+  padding-bottom: 4px;
 }
 
-#trending > div {
-  background-color: indianred;
+.card > h5 {
+  margin: 16px 0;
 }
 
 /* Footer Formatting */
